@@ -10,13 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+//#include <stdio.h>
+
 void	ft_swap(int *a, int *b)
 {
-	int 
+	int temp;
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
 
 /*int	main(void)
 {
-	ft_swap(42, 24);
+	int a = 42;
+	int b = 24;
+	
+	ft_swap(&a, &b);
+	printf("a: %d, b: %d\n", a, b);
 	return (0);
 }*/
